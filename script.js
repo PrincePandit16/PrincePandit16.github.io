@@ -209,79 +209,8 @@ document.querySelectorAll('.project-card').forEach(card => {
     });
 });
 
-// ========================================
-// VISITOR TRACKING SYSTEM (Admin Only)
-// ========================================
-
-// Initialize visitor tracking
-function initVisitorTracking() {
-    // Get or create visitor ID (for unique visitor tracking)
-    let visitorId = localStorage.getItem('visitorId');
-    if (!visitorId) {
-        visitorId = 'visitor_' + Date.now() + '_' + Math.random().toString(36).substr(2, 9);
-        localStorage.setItem('visitorId', visitorId);
-    }
-
-    // Track total visits
-    let totalVisits = parseInt(localStorage.getItem('totalVisits') || '0');
-    totalVisits++;
-    localStorage.setItem('totalVisits', totalVisits);
-
-    // Track unique visitors using a set
-    let uniqueVisitors = JSON.parse(localStorage.getItem('uniqueVisitors') || '[]');
-    if (!uniqueVisitors.includes(visitorId)) {
-        uniqueVisitors.push(visitorId);
-        localStorage.setItem('uniqueVisitors', JSON.stringify(uniqueVisitors));
-    }
-
-    // Track last visit time
-    const now = new Date();
-    localStorage.setItem('lastVisit', now.toISOString());
-
-    // Update admin panel
-    updateAdminPanel();
-}
-
-// Update admin panel with current stats
-function updateAdminPanel() {
-    const totalVisits = parseInt(localStorage.getItem('totalVisits') || '0');
-    const uniqueVisitors = JSON.parse(localStorage.getItem('uniqueVisitors') || '[]');
-    const lastVisit = localStorage.getItem('lastVisit');
-
-    document.getElementById('visit-count').textContent = totalVisits;
-    document.getElementById('unique-count').textContent = uniqueVisitors.length;
-
-    if (lastVisit) {
-        const date = new Date(lastVisit);
-        const formattedDate = date.toLocaleDateString() + ' ' + date.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
-        document.getElementById('last-visit').textContent = formattedDate;
-    }
-}
-
-// Toggle admin panel with Ctrl+Shift+A
-document.addEventListener('keydown', (e) => {
-    if (e.ctrlKey && e.shiftKey && e.key === 'A') {
-        e.preventDefault();
-        const panel = document.getElementById('admin-panel');
-        if (panel.style.display === 'none') {
-            panel.style.display = 'block';
-            updateAdminPanel();
-        } else {
-            panel.style.display = 'none';
-        }
-    }
-});
-
-// Close admin panel function
-function closeAdminPanel() {
-    document.getElementById('admin-panel').style.display = 'none';
-}
-
-// Initialize tracking on page load
-initVisitorTracking();
-
-// --- Contact form submission handler (replaces old submission block) ---
-const form = document.getElementById("contact-form"); // Use 'contact-form' as per your HTML ID
+// --- Contact form submission handler ---
+const form = document.getElementById("contact-form");
 const status = document.getElementById("form-status");
 const submitBtn = document.getElementById("submit-btn");
 
@@ -307,7 +236,7 @@ if (form) {
                 }
             });
 
-            if (status) status.style.display = "block"; // Show the message container
+            if (status) status.style.display = "block";
 
             if (response.ok) {
                 if (status) {
