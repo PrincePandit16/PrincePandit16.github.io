@@ -8,7 +8,7 @@ Welcome to my portfolio! I am an AI Engineer with a strong foundation in **Machi
 ## 👨‍💻 About Me
 I possess nearly 1 year of internship experience (Infosys Springboard, Enjay IT Solutions) building AI models that solve real-world enterprise bottlenecks. I am passionate about automating complex workflows and transitioning AI research into production-ready tools.
 
-- 📍 **Location:** Noida / Mumbai (Flexible)
+- 📍 **Location:** Umbergaon(Ready to relocate)
 - 🎓 **Education:** B.E. in AI & Data Science
 - ⚡ **Fun Fact:** I'm trilingual (Hindi, Marathi, Gujarati, English) and love bridging the gap between complex data and user-friendly applications.
 
