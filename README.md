@@ -43,7 +43,7 @@ I possess nearly 1 year of internship experience (Infosys Springboard, Enjay IT 
 
 ## 💼 Professional Experience
 
-- **AI Intern @ Infosys Springboard** (Dec '25 - Present)
+- **AI Intern @ Infosys Springboard** (Dec '25 - Mar' 26)
   - Focused on NLP data pipelines and automated sorting systems.
 - **AI Intern @ Enjay IT Solutions** (Apr '25 - Oct '25)
   - Worked on predictive modeling and research-to-production strategies.
