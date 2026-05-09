@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prince Pandit — AI/ML & GenAI Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Clash+Display:wght@400;500;600;700&family=Cabinet+Grotesk:wght@300;400;500;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <div class="cursor" id="cur"></div>
+    <div class="cursor-ring" id="curR"></div>
+    <div class="mesh">
+        <div class="mesh-blob b1"></div>
+        <div class="mesh-blob b2"></div>
+        <div class="mesh-blob b3"></div>
+    </div>
+    <div class="grid-lines"></div>
+
+    <!-- NAV -->
+    <nav>
+        <a class="logo" href="#hero">
+            <div class="logo-mark">PP</div>
+            <span class="logo-text">Prince <span>Pandit</span></span>
+        </a>
+        <div class="nav-center">
+            <a href="#about" class="nav-link">About</a>
+            <a href="#memes" class="nav-link">Story</a>
+            <a href="#education" class="nav-link">Education</a>
+            <a href="#skills" class="nav-link">Skills</a>
+            <a href="#projects" class="nav-link">Projects</a>
+            <a href="#journey" class="nav-link">Journey</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </div>
+        <div class="nav-actions">
+            <div class="nav-badge">Open to Work</div>
+            <a href="https://github.com/PrincePandit16" target="_blank" class="nav-gh">
+                <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24">
+                    <path
+                        d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" />
+                </svg>
+                GitHub
+            </a>
+            <div class="ham" id="ham"><span></span><span></span><span></span></div>
+        </div>
+    </nav>
+    <div class="mob-menu" id="mob">
+        <a href="#about" onclick="cm()">About</a>
+        <a href="#memes" onclick="cm()">Story</a>
+        <a href="#skills" onclick="cm()">Skills</a>
+        <a href="#projects" onclick="cm()">Projects</a>
+        <a href="#journey" onclick="cm()">Journey</a>
+        <a href="#contact" onclick="cm()">Contact</a>
+        <a href="https://github.com/PrincePandit16" target="_blank" style="color:var(--a2);margin-top:.5rem">GitHub
+            ↗</a>
+    </div>
+
+    <!-- HERO -->
+    <section id="hero">
+        <div class="hero-inner">
+            <div class="hero-eyebrow">
+                <svg viewBox="0 0 24 24">
+                    <path
+                        d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                </svg>
+                Entry-Level · AI/ML · GenAI · Data Science
+            </div>
+            <h1 class="ht">
+                <span class="word1">Turning Curiosity</span>
+                <span class="word2">into Intelligent</span>
+                <span class="word3">Systems</span>
+            </h1>
+            <p class="hero-sub">
+                Hey, I'm <em>Prince Pandit</em> — a fresher who learns relentlessly, builds obsessively, and believes
+                that
+                <em>smart work beats just hard work</em> every single time.
+            </p>
+            <div class="hero-pills">
+                <span class="hp active">Python</span>
+                <span class="hp active">LangChain</span>
+                <span class="hp active">FastAPI</span>
+                <span class="hp active">RAG</span>
+                <span class="hp active">TensorFlow</span>
+                <span class="hp">HuggingFace</span>
+                <span class="hp">NLP</span>
+                <span class="hp">Streamlit</span>
+                <span class="hp">SQL</span>
+            </div>
+            <div class="hero-ctas">
+                <a href="#projects" class="cta-p">
+                    <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path d="M3 7l9-4 9 4v10l-9 4-9-4V7z" />
+                    </svg>
+                    View My Work
+                </a>
+                <a href="#contact" class="cta-s">
+                    Let's Connect →
+                </a>
+            </div>
+        </div>
+        <div class="hero-scroll-cue">
+            <div class="scroll-bar"></div>
+            <span>scroll</span>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+        <div class="wrap">
+            <div class="about-wrap">
+                <div class="reveal">
+                    <div class="sec-tag">01 · About Me</div>
+                    <h2 class="st">The person<br>behind the code</h2>
+                    <p class="about-lead">I'm a fresher in AI/ML — but "beginner" doesn't mean waiting around. It means
+                        I'm moving fast.</p>
+                    <p class="about-body">I started from zero — no CS degree shortcut, no legacy tutorials. Just raw
+                        curiosity, a laptop, and a deep need to build things that actually work. Every concept I learn
+                        becomes a project. Every error message becomes a lesson.</p>
+                    <p class="about-body">My philosophy: <strong style="color:var(--text)">learn it → understand it →
+                            build with it</strong>. I don't collect certificates. I ship code. Whether it's an NL2SQL
+                        API for clinics or a voice-enabled healthcare bot — I work on real problems, not toy
+                        examples.</p>
+                    <blockquote class="about-quote">
+                        <p>"I may be a beginner, but I consistently put in extra effort, learn fast, and focus on smart
+                            work to solve real problems."</p>
+                        <cite>— Prince Pandit</cite>
+                    </blockquote>
+                </div>
+                <div class="stat-grid reveal">
+                    <div class="stat">
+                        <div class="sn">6+</div>
+                        <div class="sl">Projects Built</div>
+                    </div>
+                    <div class="stat">
+                        <div class="sn">3+</div>
+                        <div class="sl">AI Domains</div>
+                    </div>
+                    <div class="stat">
+                        <div class="sn">100%</div>
+                        <div class="sl">Self-Driven</div>
+                    </div>
+                    <div class="stat">
+                        <div class="sn">∞</div>
+                        <div class="sl">Growth Mindset</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MEME STORY -->
+    <section id="memes">
+        <div class="wrap">
+            <div class="sec-tag reveal">02 · My Story in Memes</div>
+            <h2 class="st reveal">Three truths I learned<br>the hard way</h2>
+            <p class="sd reveal">Honest snapshots of my journey. Because the best way to show who you are is to tell the
+                truth — even when it's funny.</p>
+            <div class="meme-cards">
+
+                <!-- MEME 1 -->
+                <div class="mc reveal">
+                    <div class="mc-head">
+                        <div class="mc-head-left">
+                            <span class="mc-num">1</span>
+                            <span class="mc-ttl">Student vs Recruiter Energy</span>
+                        </div>
+                        <span class="mc-vibe">The wake-up call</span>
+                    </div>
+                    <div class="mc-vs">
+                        <div class="vs-box">
+                            <span class="vs-em">😤</span>
+                            <div class="vs-who">What I thought mattered</div>
+                            <div class="vs-say bad">"I watched 100+ tutorials, finished 10 courses, and got certified."
+                            </div>
+                        </div>
+                        <div class="vs-mid">
+                            <span class="vs-tag">VS</span>
+                            <span class="vs-arrow">→</span>
+                        </div>
+                        <div class="vs-box">
+                            <span class="vs-em">🤨</span>
+                            <div class="vs-who">What the recruiter said</div>
+                            <div class="vs-say good">"That's cool. But... show me what you actually built."</div>
+                        </div>
+                    </div>
+                    <div class="mc-foot">
+                        <span class="mc-tagline">Tutorials end. Projects speak forever.</span>
+                        <button class="mc-btn" onclick="tog(this)">👉 What this says about me <span
+                                class="ch">▾</span></button>
+                    </div>
+                    <div class="mc-reveal">
+                        <div class="mc-reveal-inner">
+                            <div class="mri-row"><span class="mri-label">Mindset</span>
+                                <p class="mri-text">I hit this wall early and it redirected everything. I realised that
+                                    knowledge without output is just <strong>expensive entertainment</strong>. That
+                                    realisation is why every project in my portfolio exists.</p>
+                            </div>
+                            <div class="mri-row"><span class="mri-label">Approach</span>
+                                <p class="mri-text">I now treat every new concept as incomplete until I've shipped
+                                    something with it. NL2SQL API, Email Classifier, TweetForge — each one was me
+                                    proving a concept isn't just theory.</p>
+                            </div>
+                            <div class="mri-row"><span class="mri-label">For you</span>
+                                <p class="mri-text">I don't just bring knowledge to a team. I bring <strong>working
+                                        outputs</strong>. Day one, I'm already thinking about what I can build.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MEME 2 -->
+                <div class="mc reveal">
+                    <div class="mc-head">
+                        <div class="mc-head-left">
+                            <span class="mc-num">2</span>
+                            <span class="mc-ttl">The GenAI Overwhelm Is Real</span>
+                        </div>
+                        <span class="mc-vibe">The chaos phase</span>
+                    </div>
+                    <div class="mc-overwhelm">
+                        <div class="ow-top">
+                            <span class="ow-face">😵‍💫</span>
+                            <span class="ow-text">Me on Day 1 of Generative AI. Topics in the syllabus:</span>
+                        </div>
+                        <div class="ow-chaos">
+                            <span class="oc v">LLMs</span><span class="oc t">LangChain</span><span
+                                class="oc p">NLP</span>
+                            <span class="oc o">RAG Pipelines</span><span class="oc v">Transformers</span><span
+                                class="oc t">Vector DBs</span>
+                            <span class="oc g">Fine-tuning</span><span class="oc p">HuggingFace</span><span
+                                class="oc v">Agents</span>
+                            <span class="oc o">Prompt Engineering</span><span class="oc t">Embeddings</span><span
+                                class="oc g">FastAPI</span>
+                            <span class="oc p">FAISS</span><span class="oc v">OpenAI API</span><span class="oc o">Chroma
+                                DB</span>
+                        </div>
+                        <div class="ow-resolve">
+                            <span style="font-size:1.5rem">💪</span>
+                            <span>Me: <strong>"Okay. Deep breath. One concept at a time. Let's build."</strong></span>
+                        </div>
+                    </div>
+                    <div class="mc-foot">
+                        <span class="mc-tagline">Overwhelm is a phase. Determination is a trait.</span>
+                        <button class="mc-btn" onclick="tog(this)">👉 What this says about me <span
+                                class="ch">▾</span></button>
+                    </div>
+                    <div class="mc-reveal">
+                        <div class="mc-reveal-inner">
+                            <div class="mri-row"><span class="mri-label">Mindset</span>
+                                <p class="mri-text">GenAI is enormous and messy. I didn't pretend otherwise. I looked at
+                                    the chaos, <strong>acknowledged it</strong>, and built a system to tackle it anyway.
+                                    That's not naive optimism — that's execution.</p>
+                            </div>
+                            <div class="mri-row"><span class="mri-label">Strategy</span>
+                                <p class="mri-text">I break massive domains into digestible chunks. Learn one concept →
+                                    go deep → build something → move on. That's how I went from "what is a vector DB" to
+                                    building a working RAG pipeline.</p>
+                            </div>
+                            <div class="mri-row"><span class="mri-label">Soft skill</span>
+                                <p class="mri-text">I'm comfortable with ambiguity. In real AI work, the problem space
+                                    is always messy. I've trained myself to stay <strong>structured inside the
+                                        chaos</strong> — which is exactly what you need on a fast-moving team.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MEME 3 -->
+                <div class="mc reveal">
+                    <div class="mc-head">
+                        <div class="mc-head-left">
+                            <span class="mc-num">3</span>
+                            <span class="mc-ttl">The Builder Mindset Unlocked</span>
+                        </div>
+                        <span class="mc-vibe">The transformation</span>
+                    </div>
+                    <div class="mc-builder">
+                        <div class="build-flow">
+                            <div class="bf-box">
+                                <span class="bf-em">🤯</span>
+                                <div class="bf-phase">Phase 1</div>
+                                <div class="bf-text dim">"I have absolutely no idea what I'm doing or why this error
+                                    exists."</div>
+                            </div>
+                            <div class="bf-arrow">
+                                <span>→</span>
+                                <small>stubbornness<br>+ Stack Overflow</small>
+                            </div>
+                            <div class="bf-box">
+                                <span class="bf-em">🚀</span>
+                                <div class="bf-phase">Phase 2</div>
+                                <div class="bf-text bright">"I just shipped a real AI application. Users can actually
+                                    use this."</div>
+                            </div>
+                        </div>
+                        <p class="build-note">Every single project started as Phase 1. Every single one shipped as Phase
+                            2.</p>
+                    </div>
+                    <div class="mc-foot">
+                        <span class="mc-tagline">From confusion to creation. That's the whole game.</span>
+                        <button class="mc-btn" onclick="tog(this)">👉 What this says about me <span
+                                class="ch">▾</span></button>
+                    </div>
+                    <div class="mc-reveal">
+                        <div class="mc-reveal-inner">
+                            <div class="mri-row"><span class="mri-label">Pattern</span>
+                                <p class="mri-text">I've been in Phase 1 many times. Staring at blank files, broken
+                                    APIs, and error stacks I didn't understand. I stayed in the problem until I figured
+                                    it out. <strong>That's not talent — that's discipline.</strong></p>
+                            </div>
+                            <div class="mri-row"><span class="mri-label">Track record</span>
+                                <p class="mri-text">Talking Healthcare Bot: Phase 1 → shipped. Clinic NL2SQL: Phase 1 →
+                                    shipped. TweetForge: Phase 1 → shipped. ANN Churn Predictor: Phase 1 → deployed
+                                    live. This isn't a coincidence. It's a repeatable
+                                    pattern.</p>
+                            </div>
+                            <div class="mri-row"><span class="mri-label">For you</span>
+                                <p class="mri-text">I don't give up when things get hard. Not as a motivational line —
+                                    as a <strong>proven track record</strong> you can verify on my GitHub right now.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- EDUCATION -->
+    <section id="education">
+        <div class="wrap">
+
+            <div class="sec-tag reveal">02 · Education</div>
+
+            <h2 class="st reveal">
+                Where it all<br>began.
+            </h2>
+
+            <p class="sd reveal">
+                Academic foundation that sparked the curiosity
+                to build real things.
+            </p>
+
+            <div class="edu-grid">
+
+                <!-- Degree -->
+                <div class="edu-card main reveal">
+
+                    <div class="edu-badge degree">
+                        🎓 Bachelor's Degree
+                    </div>
+
+                    <div class="edu-name">
+                        B.E. in Artificial Intelligence and Data Science
+                    </div>
+
+                    <div class="edu-inst">
+                        SITRC
+                    </div>
+
+                    <div class="edu-meta">
+                        <span class="edu-year">2021 – 2025</span>
+                        <span class="edu-grade">CGPA: 8.14 / 10</span>
+                    </div>
+
+                    <p class="edu-desc">
+                        Strong foundation in Artificial Intelligence & Data Science
+                        with hands-on experience in Machine Learning, Deep Learning,
+                        Data Analytics, DBMS, and Software Development along with
+                        practical exposure to Generative AI and real-world AI projects.
+                    </p>
+
+                    <div class="edu-tags">
+                        <span class="et">Machine Learning</span>
+                        <span class="et">Deep Learning</span>
+                        <span class="et">Generative AI</span>
+                        <span class="et">Python</span>
+                        <span class="et">Data Analytics</span>
+                    </div>
+
+                </div>
+
+                <!-- 12th -->
+                <div class="edu-card reveal">
+
+                    <div class="edu-badge school">
+                        🏫 Higher Secondary
+                    </div>
+
+                    <div class="edu-name">
+                        Science Stream · PCM + CS
+                    </div>
+
+                    <div class="edu-inst">
+                        P.G. Junior College
+                    </div>
+
+                    <div class="edu-meta">
+                        <span class="edu-year">2019 – 2021</span>
+                        <span class="edu-grade">79.18%</span>
+                    </div>
+
+                    <p class="edu-desc">
+                        First exposure to programming logic,
+                        analytical thinking, and problem solving.
+                    </p>
+
+                    <div class="edu-tags">
+                        <span class="et">Physics</span>
+                        <span class="et">Chemistry</span>
+                        <span class="et">Maths</span>
+                        <span class="et">Computer Science</span>
+                    </div>
+
+                </div>
+
+                <!-- 10th -->
+                <div class="edu-card reveal">
+
+                    <div class="edu-badge school">
+                        🏫 Secondary School
+                    </div>
+
+                    <div class="edu-name">
+                        SSC Board Education
+                    </div>
+
+                    <div class="edu-inst">
+                        M. M. High School
+                    </div>
+
+                    <div class="edu-meta">
+                        <span class="edu-year">2018 – 2019</span>
+                        <span class="edu-grade">70.17%</span>
+                    </div>
+
+                    <p class="edu-desc">
+                        Built the academic foundation in mathematics,
+                        science, and logical reasoning that later sparked
+                        my interest in technology and problem solving.
+                    </p>
+
+                    <div class="edu-tags">
+                        <span class="et">Mathematics</span>
+                        <span class="et">Science</span>
+                        <span class="et">Logical Thinking</span>
+                        <span class="et">Problem Solving</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- SKILLS -->
+    <section id="skills">
+        <div class="wrap">
+            <div class="sec-tag reveal">03 · Technical Skills</div>
+            <h2 class="st reveal">Tools I actually use<br>to build things</h2>
+            <div class="skills-grid">
+                <div class="sg reveal">
+                    <div class="sg-head">
+                        <div class="sg-icon" style="background:rgba(124,111,255,.12)">🤖</div>
+                        <div class="sg-title">AI / Machine Learning</div>
+                    </div>
+                    <div class="badge-wrap">
+                        <span class="b v">Python</span><span class="b v">scikit-learn</span><span
+                            class="b v">TensorFlow</span><span class="b v">Keras</span><span
+                            class="b v">PyTorch(basics)</span><span class="b v">NLP</span><span class="b v">ANN</span>
+                    </div>
+                </div>
+                <div class="sg reveal">
+                    <div class="sg-head">
+                        <div class="sg-icon" style="background:rgba(34,211,238,.08)">✨</div>
+                        <div class="sg-title">Generative AI</div>
+                    </div>
+                    <div class="badge-wrap">
+                        <span class="b t">LangChain</span>
+                        <span class="b t">HuggingFace</span>
+                        <span class="b t">RAG</span>
+                        <span class="b t">Prompt Engineering</span>
+                        <span class="b t">LLMs</span>
+                        <span class="b t">Vector DBs</span>
+                        <span class="b t">Embeddings</span>
+                        <span class="b t">LangGraph</span>
+                    </div>
+                </div>
+                <div class="sg reveal">
+                    <div class="sg-head">
+                        <div class="sg-icon" style="background:rgba(244,114,182,.08)">📊</div>
+                        <div class="sg-title">Data Science</div>
+                    </div>
+                    <div class="badge-wrap">
+                        <span class="b">Pandas</span><span class="b">NumPy</span><span class="b">Matplotlib</span><span
+                            class="b">Seaborn</span><span class="b">SQL</span><span class="b">EDA</span><span
+                            class="b">Feature Eng.</span><span class="b">Streamlit</span>
+                    </div>
+                </div>
+                <div class="sg reveal">
+                    <div class="sg-head">
+                        <div class="sg-icon" style="background:rgba(52,211,153,.08)">⚡</div>
+                        <div class="sg-title">Backend & APIs</div>
+                    </div>
+                    <div class="badge-wrap">
+                        <span class="b g">FastAPI</span><span class="b g">REST APIs</span><span
+                            class="b g">Pydantic</span><span class="b g">SQLAlchemy</span>
+                    </div>
+                </div>
+                <div class="sg reveal">
+                    <div class="sg-head">
+                        <div class="sg-icon" style="background:rgba(251,146,60,.08)">🛠️</div>
+                        <div class="sg-title">Tools & Workflow</div>
+                    </div>
+                    <div class="badge-wrap">
+                        <span class="b o">Git / GitHub</span><span class="b o">Jupyter</span><span class="b o">VS
+                            Code</span><span class="b o">Google Colab</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+        <div class="wrap">
+            <div class="sec-tag reveal">04 · Projects</div>
+            <h2 class="st reveal">Real problems.<br>Real solutions.</h2>
+            <p class="sd reveal">Every project started with a genuine problem — not a tutorial to follow.</p>
+            <div class="proj-grid">
+
+                <!-- PROJECT 1: ANN Customer Churn -->
+                <div class="pc reveal">
+                    <div class="pc-glow" style="background:var(--g2)"></div>
+                    <div class="pc-top">
+                        <span class="pc-tag">Deep Learning · ANN</span>
+                    </div>
+                    <div class="pc-name">ANN Customer Churn Predictor</div>
+                    <p class="pc-prob">Banks lose millions to customer churn every year. This end-to-end ANN model
+                        predicts which customers are likely to leave, giving businesses time to act. Deployed as a live
+                        Streamlit web app — input customer details, get a churn probability instantly.</p>
+                    <div class="pc-stack">
+                        <span class="ps">TensorFlow</span><span class="ps">Keras</span><span
+                            class="ps">Streamlit</span><span class="ps">Pandas</span><span
+                            class="ps">scikit-learn</span>
+                    </div>
+                    <div class="pc-links">
+                        <a href="https://github.com/PrincePandit16/ANN-Customer-Churn-Prediction" target="_blank"
+                            class="pc-link">View on GitHub <svg width="14" height="14" fill="none" stroke="currentColor"
+                                stroke-width="2" viewBox="0 0 24 24">
+                                <path d="M7 17L17 7M17 7H7M17 7v10" />
+                            </svg></a>
+                    </div>
+                </div>
+
+                <!-- PROJECT 2: Talking Healthcare Bot -->
+                <div class="pc reveal">
+                    <div class="pc-glow" style="background:var(--g3)"></div>
+                    <div class="pc-top">
+                        <span class="pc-tag">NLP · Deep Learning · Voice</span>
+                        <span class="pc-impact">Healthcare AI</span>
+                    </div>
+                    <div class="pc-name">Talking Healthcare Chatbot</div>
+                    <p class="pc-prob">A voice-enabled healthcare chatbot that provides symptom-based diagnosis using
+                        NLP and a trained neural network. Users can interact via text or speech — the bot tokenizes,
+                        lemmatizes, classifies intent, and responds with relevant medical guidance.</p>
+                    <div class="pc-stack">
+                        <span class="ps">TensorFlow</span><span class="ps">NLTK</span><span
+                            class="ps">SpeechRecognition</span><span class="ps">pyttsx3</span><span
+                            class="ps">Keras</span>
+                    </div>
+                    <div class="pc-links">
+                        <a href="https://github.com/PrincePandit16/talking-healthcare-bot" target="_blank"
+                            class="pc-link">View on GitHub <svg width="14" height="14" fill="none" stroke="currentColor"
+                                stroke-width="2" viewBox="0 0 24 24">
+                                <path d="M7 17L17 7M17 7H7M17 7v10" />
+                            </svg></a>
+                    </div>
+                </div>
+
+                <!-- PROJECT 3: Clinic NL2SQL -->
+                <div class="pc reveal">
+                    <div class="pc-glow" style="background:var(--g1)"></div>
+                    <div class="pc-top">
+                        <span class="pc-tag">AI · NLP · API</span>
+                        <span class="pc-impact">Healthcare impact</span>
+                    </div>
+                    <div class="pc-name">Clinic NL2SQL API</div>
+                    <p class="pc-prob">Clinic staff can't query databases without SQL. This API translates natural
+                        language questions into SQL — so non-technical medical staff can retrieve patient data instantly
+                        using plain English.</p>
+                    <div class="pc-stack">
+                        <span class="ps">FastAPI</span><span class="ps">LLM</span><span class="ps">SQL</span><span
+                            class="ps">Prompt Eng.</span><span class="ps">Python</span>
+                    </div>
+                    <div class="pc-links">
+                        <a href="https://github.com/PrincePandit16" target="_blank" class="pc-link">View on GitHub <svg
+                                width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"
+                                viewBox="0 0 24 24">
+                                <path d="M7 17L17 7M17 7H7M17 7v10" />
+                            </svg></a>
+                    </div>
+                </div>
+
+                <!-- PROJECT 4: FastAPI Task Manager -->
+                <div class="pc reveal">
+                    <div class="pc-glow" style="background:var(--g2)"></div>
+                    <div class="pc-top">
+                        <span class="pc-tag">Backend · CRUD</span>
+                        <span class="pc-impact">Production pattern</span>
+                    </div>
+                    <div class="pc-name">FastAPI Task Manager</div>
+                    <p class="pc-prob">Full-featured task management REST API with auth, database integration and clean
+                        architecture. The backbone pattern for any serious AI application backend.</p>
+                    <div class="pc-stack">
+                        <span class="ps">FastAPI</span><span class="ps">SQLAlchemy</span><span
+                            class="ps">Pydantic</span><span class="ps">SQLite</span><span class="ps">JWT</span>
+                    </div>
+                    <div class="pc-links">
+                        <a href="https://github.com/PrincePandit16" target="_blank" class="pc-link">View on GitHub <svg
+                                width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"
+                                viewBox="0 0 24 24">
+                                <path d="M7 17L17 7M17 7H7M17 7v10" />
+                            </svg></a>
+                    </div>
+                </div>
+
+                <!-- PROJECT 5: TweetForge -->
+                <div class="pc reveal">
+                    <div class="pc-glow" style="background:var(--g3)"></div>
+                    <div class="pc-top">
+                        <span class="pc-tag">GenAI · LLM</span>
+                        <span class="pc-impact">Content automation</span>
+                    </div>
+                    <div class="pc-name">TweetForge</div>
+                    <p class="pc-prob">Content creators waste hours crafting posts. TweetForge uses LLMs to generate
+                        tweet threads, viral hooks, and content calendars from a single topic input in seconds.</p>
+                    <div class="pc-stack">
+                        <span class="ps">LangChain</span><span class="ps">OpenAI API</span><span
+                            class="ps">FastAPI</span><span class="ps">Prompt Eng.</span>
+                    </div>
+                    <div class="pc-links">
+                        <a href="https://github.com/PrincePandit16" target="_blank" class="pc-link">View on GitHub <svg
+                                width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"
+                                viewBox="0 0 24 24">
+                                <path d="M7 17L17 7M17 7H7M17 7v10" />
+                            </svg></a>
+                    </div>
+                </div>
+
+                <!-- PROJECT 6: AI Email Classifier -->
+                <div class="pc reveal">
+                    <div class="pc-glow" style="background:var(--g1)"></div>
+                    <div class="pc-top">
+                        <span class="pc-tag">ML · NLP</span>
+                        <span class="pc-impact">Business automation</span>
+                    </div>
+                    <div class="pc-name">AI Email Classifier</div>
+                    <p class="pc-prob">Businesses receive thousands of emails daily. This classifier auto-categorises
+                        emails into support, sales, spam, or urgent — cutting manual triage time and freeing teams to
+                        focus on what matters.</p>
+                    <div class="pc-stack">
+                        <span class="ps">NLP</span><span class="ps">scikit-learn</span><span
+                            class="ps">TF-IDF</span><span class="ps">Python</span><span class="ps">Pandas</span>
+                    </div>
+                    <div class="pc-links">
+                        <a href="https://github.com/PrincePandit16/AI_Email_Classifier" target="_blank"
+                            class="pc-link">View on GitHub <svg width="14" height="14" fill="none" stroke="currentColor"
+                                stroke-width="2" viewBox="0 0 24 24">
+                                <path d="M7 17L17 7M17 7H7M17 7v10" />
+                            </svg></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- JOURNEY -->
+    <section id="journey">
+        <div class="wrap">
+            <div class="sec-tag reveal">05 · Learning Journey</div>
+            <h2 class="st reveal">How I got here —<br>honestly</h2>
+            <p class="sd reveal">Self-driven, intentional, and still accelerating.</p>
+            <div class="tl">
+                <div class="ti reveal">
+                    <div class="ti-phase">Foundation</div>
+                    <div class="ti-title">Python & Data Science Fundamentals</div>
+                    <div class="ti-desc">Core Python, Pandas, NumPy, statistics, and EDA. Structured courses + immediate
+                        application to mini-projects. Understood that knowing syntax means nothing without knowing why.
+                    </div>
+                    <div class="ti-tags"><span class="tt">Python</span><span class="tt">Pandas</span><span
+                            class="tt">Statistics</span><span class="tt">EDA</span></div>
+                </div>
+                <div class="ti reveal">
+                    <div class="ti-phase">ML Phase</div>
+                    <div class="ti-title">Classical Machine Learning</div>
+                    <div class="ti-desc">Supervised and unsupervised learning — regression, classification, clustering,
+                        SVMs. Built the AI Email Classifier and worked through Kaggle datasets to develop real model
+                        intuition.</div>
+                    <div class="ti-tags"><span class="tt">scikit-learn</span><span class="tt">Feature Eng.</span><span
+                            class="tt">Model Eval</span><span class="tt">Kaggle</span></div>
+                </div>
+                <div class="ti reveal">
+                    <div class="ti-phase">Deep Learning</div>
+                    <div class="ti-title">Neural Networks & ANN</div>
+                    <div class="ti-desc">ANN architectures, backpropagation, and deployment. Applied to the ANN Customer
+                        Churn Predictor — a full end-to-end pipeline from training to a live Streamlit app that real
+                        users can interact with.</div>
+                    <div class="ti-tags"><span class="tt">TensorFlow</span><span class="tt">Keras</span><span
+                            class="tt">ANN</span><span class="tt">Streamlit</span></div>
+                </div>
+                <div class="ti reveal">
+                    <div class="ti-phase">NLP + Voice</div>
+                    <div class="ti-title">Natural Language Processing & Voice AI</div>
+                    <div class="ti-desc">Built the Talking Healthcare Chatbot — a complete NLP pipeline with intent
+                        classification, tokenization, lemmatization, and voice I/O using speech-to-text and
+                        text-to-speech. Real-world NLP beyond just sentiment analysis.</div>
+                    <div class="ti-tags"><span class="tt">NLTK</span><span class="tt">Intent Classification</span><span
+                            class="tt">SpeechRecognition</span><span class="tt">Voice AI</span></div>
+                </div>
+                <div class="ti reveal">
+                    <div class="ti-phase">Backend + APIs</div>
+                    <div class="ti-title">FastAPI & Production Code Patterns</div>
+                    <div class="ti-desc">Realised AI models are useless without APIs. Learned FastAPI, REST design,
+                        database integration, and auth. Built the Task Manager API to prove I can write backend code
+                        that actually runs in production.</div>
+                    <div class="ti-tags"><span class="tt">FastAPI</span><span class="tt">SQLAlchemy</span><span
+                            class="tt">Pydantic</span><span class="tt">REST</span></div>
+                </div>
+                <div class="ti reveal">
+                    <div class="ti-phase">GenAI Era</div>
+                    <div class="ti-title">LLMs, LangChain & Generative AI</div>
+                    <div class="ti-desc">Deep in LangChain, RAG pipelines, prompt engineering, and LLM integration.
+                        Built TweetForge and the Clinic NL2SQL API — turning GenAI knowledge into shipped, working
+                        products.</div>
+                    <div class="ti-tags"><span class="tt">LangChain</span><span class="tt">RAG</span><span
+                            class="tt">HuggingFace</span><span class="tt">Prompt Eng.</span></div>
+                </div>
+                <div class="ti current reveal">
+                    <div class="ti-phase">Now → What's next</div>
+                    <div class="ti-title">Seeking my first real-world AI role</div>
+                    <div class="ti-desc">Ready to bring everything into a team environment. Looking for an entry-level
+                        role where I can contribute from day one, learn faster with better people around me, and help
+                        build something that matters.</div>
+                    <div class="ti-tags"><span class="tt">Open to Work</span><span class="tt">AI/ML</span><span
+                            class="tt">GenAI</span><span class="tt">Data Science</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+        <div class="wrap">
+
+            <div class="sec-tag reveal">06 · Contact</div>
+
+            <h2 class="st reveal">
+                Let's build<br>something together.
+            </h2>
+
+            <p class="sd reveal">
+                Open to entry-level roles, internships, and collaborations.
+                I reply fast.
+            </p>
+
+            <div class="closer reveal">
+
+                <h3>
+                    Still reading? <span>Hire me.</span>
+                </h3>
+
+                <p>
+                    Entry-level in title. Builder in practice.
+                    If you want someone who learns fast, ships real things,
+                    and brings genuine enthusiasm to every problem — let's talk.
+                </p>
+
+                <div class="closer-btns">
+
+                    <a href="mailto:iamprince1606@gmail.com" class="cb-p">
+                        📧 Email me now
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/prince200" target="_blank" class="cb-s">
+                        💼 LinkedIn
+                    </a>
+
+                    <a href="https://github.com/PrincePandit16" target="_blank" class="cb-s">
+                        🐙 Check GitHub
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>Crafted with obsession by <a href="https://github.com/PrincePandit16" target="_blank">Prince Pandit</a> ·
+            AI/ML & GenAI Engineer · 2025</p>
+        <p style="margin-top:.35rem">Built with curiosity, caffeine, and an unhealthy amount of Stack Overflow.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
