@@ -9,12 +9,9 @@ const Contact = () => {
         <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/30 text-primary-2 text-[10px] uppercase tracking-widest font-mono mb-6">
           07 · Contact
         </div>
-        <h2 className="text-4xl md:text-6xl font-extrabold leading-tight mb-6 tracking-tighter">
+        <h2 className="text-4xl md:text-6xl font-extrabold leading-tight mb-16 tracking-tighter">
           Let's build<br />something together.
         </h2>
-        <p className="text-text-soft mb-16 max-w-xl mx-auto">
-          Open to entry-level roles, internships, and collaborations. I reply fast.
-        </p>
 
         <motion.div
           initial={{ opacity: 0, scale: 0.95 }}
