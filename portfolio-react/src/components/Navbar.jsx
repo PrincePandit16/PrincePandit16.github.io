@@ -51,6 +51,10 @@ const Navbar = () => {
 
         {/* Actions */}
         <div className="flex items-center gap-4">
+          <div className="px-3 py-1 rounded-full bg-mint/10 border border-mint/20 text-mint text-[10px] font-mono tracking-wider flex items-center gap-2">
+            <span className="w-1.5 h-1.5 rounded-full bg-mint animate-pulse" />
+            Open to Work
+          </div>
           <ExternalLink
             href="https://github.com/PrincePandit16"
             className="flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/5 border border-white/10 text-text-soft text-xs font-bold hover:border-primary/40 hover:text-text hover:-translate-y-0.5 transition-all"
