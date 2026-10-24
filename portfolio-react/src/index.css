@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #050816;
+  --color-bg-2: #0b1020;
+  --color-primary: #8b7cff;
+  --color-primary-2: #b4a7ff;
+  --color-cyan: #39d5ff;
+  --color-pink: #ff6ec7;
+  --color-mint: #4adea7;
+  --color-amber: #ffac69;
+  --color-text: #f5f7ff;
+  --color-text-soft: #b8c2de;
+  --color-text-muted: #7d88b5;
+
+  --background-image-grad-1: linear-gradient(135deg, #8b7cff 0%, #b4a7ff 40%, #7de2ff 100%);
+  --background-image-grad-2: linear-gradient(135deg, #39d5ff 0%, #8b7cff 50%, #ff6ec7 100%);
+  --background-image-grad-3: linear-gradient(135deg, #1a233d 0%, rgba(139, 124, 255, 0.25) 100%);
+}
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: 'Cabinet Grotesk', sans-serif;
+  overflow-x: hidden;
+}
+
+.mesh-blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(100px);
+  opacity: 0.2;
+  z-index: -1;
+  pointer-events: none;
+}
+
+@keyframes drift {
+  0% { transform: translate3d(0, 0, 0) scale(1); }
+  100% { transform: translate3d(30px, 25px, 0) scale(1.08); }
+}
+
+.animate-drift {
+  animation: drift 20s ease-in-out infinite alternate;
+}
