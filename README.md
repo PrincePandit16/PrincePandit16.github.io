@@ -1,6 +1,6 @@
 # Prince Pandit Portfolio
 
-A premium personal portfolio website for Prince Pandit, showcasing AI/ML, GenAI, data science projects, experience, and background.
+A personal portfolio website for Prince Pandit, showcasing AI/ML, GenAI, data science projects, experience, and background.
 
 ## Overview
 
@@ -46,4 +46,3 @@ This site is ready to deploy on GitHub Pages or any static hosting provider.
 
 - GitHub: https://github.com/PrincePandit16
 - LinkedIn: https://www.linkedin.com/in/prince200
-- Email: iamprince1606@gmail.com
