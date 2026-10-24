@@ -130,7 +130,7 @@ const Projects = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5">
           {projects.map((proj, i) => (
             <motion.div
               key={i}
@@ -138,20 +138,20 @@ const Projects = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: i * 0.1 }}
-              className="relative p-8 bg-bg-2 border border-white/10 rounded-3xl overflow-hidden group hover:border-primary/40 transition-all shadow-xl"
+              className="relative p-6 bg-bg-2 border border-white/10 rounded-3xl overflow-hidden group hover:border-primary/40 transition-all shadow-xl"
             >
               {/* Background Glow */}
               <div className={`absolute -bottom-24 -left-24 w-64 h-64 ${proj.glow} opacity-10 blur-3xl group-hover:opacity-20 transition-opacity pointer-events-none`} />
 
               <div className="relative z-10 flex flex-col h-full gap-6">
-                <div className="flex justify-between items-start gap-4">
+                <div className="flex flex-wrap justify-between items-start gap-3">
                   <span className="text-[10px] uppercase tracking-widest text-text-muted font-mono">{proj.tag}</span>
                   <span className={`px-3 py-1 rounded-full border text-[10px] uppercase tracking-widest font-mono ${proj.impactColor}`}>
                     {proj.impact}
                   </span>
                 </div>
 
-                <h3 className="text-2xl font-bold tracking-tight">{proj.title}</h3>
+                <h3 className="text-xl font-bold tracking-tight">{proj.title}</h3>
                 <p className="text-text-soft text-sm leading-relaxed">
                   {proj.prob}
                 </p>

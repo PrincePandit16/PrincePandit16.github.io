@@ -27,7 +27,9 @@ const Journey = () => {
           </p>
         </div>
 
-        <div className="space-y-6">
+        <div className="relative space-y-6 pl-11 md:pl-16">
+          <div className="absolute left-[19px] top-5 bottom-5 w-px bg-gradient-to-b from-cyan/20 via-cyan/70 to-pink/30" />
+
           {steps.map((step, i) => (
             <motion.div
               key={i}
@@ -35,12 +37,20 @@ const Journey = () => {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: i * 0.1 }}
-              className={`p-6 rounded-3xl border transition-all ${
-                step.current ? 'bg-primary/10 border-primary/40 shadow-lg shadow-primary/10' : 'bg-bg border-white/10'
+              className={`relative p-5 md:p-6 rounded-2xl border transition-all ${
+                step.current ? 'bg-cyan/5 border-cyan/30 shadow-lg shadow-cyan/5' : 'bg-bg border-white/10 hover:border-cyan/20'
               }`}
             >
+              <div className={`absolute -left-[45px] md:-left-[65px] top-5 size-10 rounded-full border flex items-center justify-center z-10 ${
+                step.current ? 'bg-cyan/15 border-cyan/60 text-cyan' : 'bg-bg-2 border-cyan/30 text-cyan/80'
+              }`}>
+                <span className="font-mono text-xs font-bold">{String(i + 1).padStart(2, '0')}</span>
+              </div>
+
               <div className="flex flex-col md:flex-row md:items-center gap-4 mb-4">
-                <span className="text-primary-2 text-[10px] uppercase tracking-widest font-mono font-bold">{step.phase}</span>
+                <span className={`text-[10px] uppercase tracking-widest font-mono font-bold ${
+                  step.current ? 'text-cyan' : 'text-primary-2'
+                }`}>{step.phase}</span>
                 <h3 className="text-xl font-bold leading-tight">{step.title}</h3>
               </div>
               <p className="text-text-soft text-sm leading-relaxed mb-6">
