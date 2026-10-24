@@ -39,11 +39,17 @@ A high-performance, premium personal portfolio built with **React 19**, **Vite**
 
 ### Deployment
 
-The project is optimized for GitHub Pages. To deploy:
+To publish this as the root GitHub Pages site at `https://princepandit16.github.io/`:
+
+1. Rename the GitHub repository to **`PrincePandit16.github.io`** in **Settings → General → Repository name**. GitHub requires a user-site repository to match the account name.
+2. In **Settings → Pages**, publish from the `gh-pages` branch and the root folder (`/`).
+3. From the `portfolio-react` directory, build and publish:
+
 ```bash
-npm run build
-# Then deploy the 'dist' folder to your hosting provider
+npm run deploy
 ```
+
+The deploy command builds the app and publishes `dist` to the `gh-pages` branch. The Vite base path is `/` for the root site.
 
 ## 📂 Project Structure
 
