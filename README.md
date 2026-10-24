@@ -1,48 +1,58 @@
-# Prince Pandit Portfolio
+# 🚀 Prince Pandit — AI/ML & GenAI Engineer Portfolio
 
-A personal portfolio website for Prince Pandit, showcasing AI/ML, GenAI, data science projects, experience, and background.
+A high-performance, premium personal portfolio built with **React 19**, **Vite**, and **Tailwind CSS v4**. This site showcases a deep expertise in Generative AI, Agentic workflows, and Data Science.
 
-## Overview
+## 🌟 Key Features
 
-This portfolio is designed to feel polished and premium, with:
-- a dark, modern visual style
-- subtle glassmorphism and gradients
-- responsive navigation for desktop and mobile
-- strong project storytelling
-- clean sections for education, skills, experience, journey, and contact
+- **Modern Tech Stack**: Built with React 19 for modularity and Vite for lightning-fast performance.
+- **Premium Design**: Implements a dark-themed, glassmorphism aesthetic with a custom design system.
+- **Dynamic Animations**: Smooth, interactive reveals and transitions powered by `framer-motion`.
+- **Fully Responsive**: Seamless experience across mobile, tablet, and desktop devices.
+- **Agentic Focus**: Dedicated sections highlighting professional experience in Agentic AI and RAG pipelines.
 
-## Local preview
+## 🛠️ Tech Stack
 
-Open `index.html` directly in a browser, or run a lightweight local server:
+- **Frontend**: React 19, Tailwind CSS v4, Framer Motion, Lucide React.
+- **Build Tool**: Vite.
+- **AI Focus**: LangGraph, LangChain, Groq, OpenAI, and various LLM orchestrations.
 
+## 🚀 Getting Started
+
+### Local Development
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/PrincePandit16/PrincePandit16.github.io.git
+   cd PrincePandit16.github.io/portfolio-react
+   ```
+
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+
+3. **Run the development server:**
+   ```bash
+   npm run dev
+   ```
+   Then visit: `http://localhost:5173`
+
+### Deployment
+
+The project is optimized for GitHub Pages. To deploy:
 ```bash
-python -m http.server 8000
+npm run build
+# Then deploy the 'dist' folder to your hosting provider
 ```
 
-Then visit:
+## 📂 Project Structure
 
-```text
-http://localhost:8000
-```
+- `/portfolio-react/src/components` — Modular UI components (Hero, Projects, Experience, etc.)
+- `/portfolio-react/src/index.css` — Tailwind v4 theme configuration and global styles.
+- `/portfolio-react/src/App.jsx` — Main application layout and routing.
 
-## Files
+## 📬 Contact
 
-- `index.html` — portfolio structure and content
-- `style.css` — premium theme and responsive styling
-- `script.js` — navigation, reveal animations, and interaction behavior
-
-## Customization
-
-You can update:
-- personal details in `index.html`
-- colors and styles in `style.css`
-- interaction effects in `script.js`
-
-## Deployment
-
-This site is ready to deploy on GitHub Pages or any static hosting provider.
-
-## Contact
-
-- GitHub: https://github.com/PrincePandit16
-- LinkedIn: https://www.linkedin.com/in/prince200
+- **GitHub**: [PrincePandit16](https://github.com/PrincePandit16)
+- **LinkedIn**: [Prince Pandit](https://www.linkedin.com/in/prince200)
+- **Email**: iamprince1606@gmail.com
